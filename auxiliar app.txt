@@ -1,0 +1,71 @@
+Emerson, Alves,greg@gmail.com,890890,{carteira},1
+'Emerson', 'Alves','greg@gmail.com',890890,1
+
+u1 = Usuario()
+u1.mostrar_usuario()
+u1.mostrar_carteira()
+
+c1=Carteira()
+c1.adicionar_renda_fixa()
+c1.mostrar_carteira()
+
+, nome, sobrenome,email,senha,id
+
+    def verificar_id(self):
+        if self.id not in self.dados:
+            self.dados['Usuarios'] = {self.id, self.nome}
+        else:
+            self.dados['Usuarios'].update = {self.id, self.nome}
+
+        print(self.dados)
+
+
+# Estão na classe base de dados
+
+    # def adicionar_renda_variavel(self):
+    #     self.carteira = {}
+    #     self.dict_renda_variavel = {}
+    #     renda_variavel = input("Insira a renda variavel")
+    #     self.dict_renda_variavel.update({"FII":renda_variavel})
+    #     # Como adiciono um dicionarios ao dicionario carteira da classe usuario? R= abaixo.
+    #     self.carteira.update({"RV":self.dict_renda_variavel})
+    #
+    # def mostrar_carteira(self):
+    #     # Como adicionar itens a um dicionario ? R= .update
+    #     #self.carteira.update({"RF":"dicionario com a renda fixa", "RV":"dicionario com renda variavel"})
+    #     print(self.carteira)
+
+
+    def adicionar_renda_variavel_bd(self):
+        self.carteira = {}
+        self.dict_renda_variavel = {}
+        renda_variavel = input("Insira a renda variavel")
+        self.dict_renda_variavel.update({"FII":renda_variavel})
+        # Como adiciono um dicionarios ao dicionario carteira da classe usuario? R= abaixo.
+        self.carteira.update({"RV":self.dict_renda_variavel})
+        self.dados.update(self.carteira)
+        print(self.dados)
+
+Insira seu nomeGLAUBER
+Insira seu sobrenometeste
+Insira seu emailgmail
+Insira seu senha
+Insira seu id1
+insira RF ou RVRF
+Insira o nome da renda fixa: CB, LCI, LCA, TESOUROLCI
+Insira o indexador: IPCA, CDI, PRECDI
+Insira a valor investido100
+{'tipo': 'RF', 'nome': 'LCI', 'indexador': 'CDI', 'valor': '100'}
+{'Nome': 'GLAUBER', 'Sobrenome': 'teste', 'Email': 'gmail', 'id': '1', 'Carteira': {'tipo': 'RF', 'nome': 'LCI', 'indexador': 'CDI', 'valor': '100'}}
+
+Insira seu nomeemerson
+Insira seu sobrenomealves
+Insira seu emailgmail
+Insira seu senha
+Insira seu id2
+insira RF ou RVRV
+Insira o tipo da renda variavel: Acao, FII ou ETFETF
+Insira o nome do papelIVVB11
+Insira a valor investido300
+{'Inv': 'RV', 'tipo': 'ETF', 'papel': 'IVVB11', 'valor': '300'}
+{'Nome': 'emerson', 'Sobrenome': 'alves', 'Email': 'gmail', 'id': '2', 'Carteira': {'Inv': 'RV', 'tipo': 'ETF', 'papel': 'IVVB11', 'valor': '300'}}
