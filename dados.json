@@ -1,0 +1,12 @@
+{
+ "Nome": "EMERSON",
+ "Sobrenome": "DEV",
+ "Email": "GMAIL",
+ "id": "2",
+ "Carteira": {
+  "Inv": "RV",
+  "tipo": "FII",
+  "papel": "XPCM11",
+  "valor": "56"
+ }
+}
