@@ -1,12 +1,26 @@
 {
- "Nome": "EMERSON",
- "Sobrenome": "DEV",
- "Email": "GMAIL",
- "id": "2",
- "Carteira": {
-  "Inv": "RV",
-  "tipo": "FII",
-  "papel": "XPCM11",
-  "valor": "56"
+ "0": {
+  "Nome": "",
+  "Sobrenome": "",
+  "Email": "",
+  "id": "",
+  "CARTEIRA": {
+   "tipo": "",
+   "nome": "",
+   "indexador": "",
+   "valor": ""
+  }
+ },
+ "1": {
+  "Nome": "EMERSON",
+  "Sobrenome": "GREGORIO",
+  "Email": "GREG@GMAIL.COM",
+  "id": "1",
+  "CARTEIRA": {
+   "tipo": "RF",
+   "nome": "TESOURO",
+   "indexador": "IPCA",
+   "valor": "852"
+  }
  }
 }
