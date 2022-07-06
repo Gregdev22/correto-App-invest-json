@@ -69,3 +69,12 @@ Insira o nome do papelIVVB11
 Insira a valor investido300
 {'Inv': 'RV', 'tipo': 'ETF', 'papel': 'IVVB11', 'valor': '300'}
 {'Nome': 'emerson', 'Sobrenome': 'alves', 'Email': 'gmail', 'id': '2', 'Carteira': {'Inv': 'RV', 'tipo': 'ETF', 'papel': 'IVVB11', 'valor': '300'}}
+
+else:
+    usuario = BaseDeDados()
+    usuario.id=randint(1,5)
+    while str(usuario.id) in usuario.dados.keys():
+        variavel = ("Usuario ja existe")
+    else:
+        usuario.inserir_dados_usuario()
+        usuario.adicionar_inv()

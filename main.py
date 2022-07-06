@@ -1,16 +1,23 @@
 from usuario import Usuario
 from basededados import BaseDeDados
 import json
+from random import randint
 
 u1=BaseDeDados()
-u1.verificar_usuario()
-# u1.inserir_dados_usuario()
-# u1.adicionar_inv()
-#u1.adicionar_renda_variavel_bd()
+print(u1.dados.keys())
+#u1.verificar_usuario()
 
-# with open("dados.json", "r") as file:
-#     dados_dict_json = file.read() # --> Aqui é um arquivo json
-#     dados_dict_json = json.loads(dados_dict_json) #--> Aqui é um dicionario python
-#     print(dados_dict_json)
+print('Bem vindo ao AppInvest Json \n')
+resposta = input(' Já é cadastrado ? (S/N)')
+if resposta == "S":
+    usuario = BaseDeDados()
+    usuario.verificar_usuario() # --> Quando responde S e o id de usuario não existe no dicionario, ele executa o else de verificar usuario.
+    #print(usuario.dados["1"]) #--> Exibiu os dados do usuario de id "1". usuario.dados é um dicionario de todos os dados de todos usuarios.
+else:
+    usuario = BaseDeDados()
+    usuario.inserir_dados_usuario()
+    usuario.adicionar_inv()
+    usuario.visualizar_usuario()
+
 
 
