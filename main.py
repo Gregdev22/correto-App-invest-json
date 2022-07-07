@@ -15,9 +15,9 @@ if resposta == "S":
     #print(usuario.dados["1"]) #--> Exibiu os dados do usuario de id "1". usuario.dados é um dicionario de todos os dados de todos usuarios.
 else:
     usuario = BaseDeDados()
-    usuario.inserir_dados_usuario()
-    usuario.adicionar_inv()
-    usuario.visualizar_usuario()
+    usuario.cadastrar_usuario()
+    # usuario.adicionar_inv()
+    # usuario.visualizar_usuario()
 
 
 

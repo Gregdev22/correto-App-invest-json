@@ -78,3 +78,25 @@ else:
     else:
         usuario.inserir_dados_usuario()
         usuario.adicionar_inv()
+
+
+    def verificar_usuario(self):
+        self.id = input("Insira o id do usuario")
+        if self.id in self.dados.keys(): # --> Confere se o id está no dicionario.
+            senha = input("Digite sua senha")
+            while senha not in self.dados[self.id]['senha']:# --> Confere a senha do usuario de id informado.
+                 print('Senha errada. Tente novamente')
+            else:
+                print(f'Exibindo dados do usuario de id {self.id}.')
+                print(self.dados[self.id])  # Chamar uma função de carregar dados do usuario e/ou de alterar dados do usuario
+                # self.dados[self.id]['senha'] # -- lOCALIZAÇÃO DA CHAVE 'senha' dentro do dicionario.
+        else:
+            print("usuario nao localizado.")
+            resposta_usuario = input("Deseja cadastrar ? (S/N)")
+            if resposta_usuario == "S":
+                # Rodar ALGUMAS funções da classe BaseDeDados
+                 #self.id = randint(10,20)
+                 self.inserir_dados_usuario()
+                 #self.adicionar_inv()
+            else:
+                print("Programa finalizado")
